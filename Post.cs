@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace RSS_reader
 {
-    class Post: INotifyPropertyChanged
+    public class Post: INotifyPropertyChanged
     {
         public int Id { get; set; }
         private string _title;
         private string _link;
         private string _description;
         private string _date;//перепилить в DateTime позднее
-
+        
         public string Title
         {
             get { return _title; }

@@ -1,0 +1,42 @@
+﻿<Window x:Class="RSS_reader.FeedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSS_reader"
+        mc:Ignorable="d"
+        Title="FeedWindow" Height="300" Width="500" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="243*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="242" VerticalAlignment="Top" Width="247">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+            <ListViewItem Content="ListViewItem" Margin="0"/>
+            <ListViewItem Content="ListViewItem" Margin="0"/>
+            <ListViewItem Content="ListViewItem" Margin="0"/>
+        </ListView>
+        <Button x:Name="btn_Add" Content="Add" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="75" Margin="10,5,0,0"/>
+        <Button x:Name="btn_Del" Content="Delete" HorizontalAlignment="Left" Margin="90,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label0" Content="Feed Name:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Feed Link:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_FeedName" Grid.Column="1" Margin="82,12,10,207" TextWrapping="Wrap"/>
+        <TextBox x:Name="tb_FeedLink" Grid.Column="1" Margin="82,38,10,181" TextWrapping="Wrap"/>
+        <Button x:Name="btn_AddFeed" Content="Add Feed" Grid.Column="1" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Abort" Content="Abort" Grid.Column="1" HorizontalAlignment="Left" Margin="90,66,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_OK" Content="OK" Grid.Column="1" HorizontalAlignment="Left" Margin="82,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Cancel" Content="Cancel" Grid.Column="1" HorizontalAlignment="Left" Margin="162,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+
+
+
+    </Grid>
+</Window>

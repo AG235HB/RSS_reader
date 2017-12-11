@@ -1,0 +1,9 @@
+{"Items":
+[{
+  "name":"Pikabu",
+  "link":"https://pikabu.ru/xmlfeeds.php?cmd=popular"
+},{
+  "name":"Habr gamedev",
+  "link":"https://habrahabr.ru/rss/hub/gamedev/"
+}]
+}

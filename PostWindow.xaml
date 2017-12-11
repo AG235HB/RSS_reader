@@ -1,0 +1,22 @@
+﻿<Window x:Class="RSS_reader.PostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSS_reader"
+        mc:Ignorable="d"
+        Title="{Binding Title}" Height="300" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--<TextBlock Text="{Binding Description}" Width="483" Margin="0"/>-->
+        <!--<StackPanel x:Name="STK_panel">
+            
+        </StackPanel>-->
+        <RichTextBox x:Name="richTextBox">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="{Binding Description}"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>
