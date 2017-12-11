@@ -8,12 +8,13 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
-            <TextBox x:Name="URL_textBox" Height="30" Margin="0" TextWrapping="Wrap" Text="https://pikabu.ru/xmlfeeds.php?cmd=popular" VerticalAlignment="Top" Width="250"/>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Width="225">
+            <ComboBox x:Name="chBox_RSS" Width="150" />
             <Button x:Name="SYNC_button" Content="SYNC" Height="30" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+            <!--<TextBox x:Name="URL_textBox" Height="30" Margin="0" TextWrapping="Wrap" Text="https://pikabu.ru/xmlfeeds.php?cmd=popular" VerticalAlignment="Top" Width="250"/>-->
         </StackPanel>
         <!--<ToolBar x:Name="toolBar" VerticalAlignment="Top" Height="35">
             
@@ -29,7 +30,8 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Button x:Name="button" Content="=" HorizontalAlignment="Left" Margin="442,0,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="bFeedSettings" Content="Settings" HorizontalAlignment="Left" Margin="442,0,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="bFeedSettings_Click"/>
+        <Button x:Name="btn_Refresh" Content="Refresh" HorizontalAlignment="Left" Margin="367,0,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btn_Refresh_Click"/>
         <!--<ListView x:Name="listView" Margin="260,35,0,0">
             <ListView.View>
                 <GridView>

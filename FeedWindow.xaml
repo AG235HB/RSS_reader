@@ -21,20 +21,18 @@
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
+            <!--<ListViewItem Content="ListViewItem" Margin="0"/>
             <ListViewItem Content="ListViewItem" Margin="0"/>
-            <ListViewItem Content="ListViewItem" Margin="0"/>
-            <ListViewItem Content="ListViewItem" Margin="0"/>
+            <ListViewItem Content="ListViewItem" Margin="0"/>-->
         </ListView>
-        <Button x:Name="btn_Add" Content="Add" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="75" Margin="10,5,0,0"/>
-        <Button x:Name="btn_Del" Content="Delete" HorizontalAlignment="Left" Margin="90,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="label0" Content="Feed Name:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="Feed Link:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tb_FeedName" Grid.Column="1" Margin="82,12,10,207" TextWrapping="Wrap"/>
-        <TextBox x:Name="tb_FeedLink" Grid.Column="1" Margin="82,38,10,181" TextWrapping="Wrap"/>
-        <Button x:Name="btn_AddFeed" Content="Add Feed" Grid.Column="1" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btn_Abort" Content="Abort" Grid.Column="1" HorizontalAlignment="Left" Margin="90,66,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btn_OK" Content="OK" Grid.Column="1" HorizontalAlignment="Left" Margin="82,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btn_Cancel" Content="Cancel" Grid.Column="1" HorizontalAlignment="Left" Margin="162,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Add" Content="Add" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="75" Margin="10,5,0,0" Click="btn_Add_Click"/>
+        <Button x:Name="btn_Del" Content="Delete" HorizontalAlignment="Left" Margin="90,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btn_Del_Click"/>
+        <Label x:Name="label0" Content="Feed Name:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Label x:Name="label1" Content="Feed Link:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <TextBox x:Name="tb_FeedName" Grid.Column="1" Margin="82,12,10,207" TextWrapping="Wrap" IsEnabled="False"/>
+        <TextBox x:Name="tb_FeedLink" Grid.Column="1" Margin="82,38,10,181" TextWrapping="Wrap" IsEnabled="False"/>
+        <Button x:Name="btn_AddFeed" Content="Add Feed" Grid.Column="1" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btn_AddFeed_Click"/>
+        <Button x:Name="btn_Abort" Content="Abort" Grid.Column="1" HorizontalAlignment="Left" Margin="90,66,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btn_Abort_Click"/>
 
 
 

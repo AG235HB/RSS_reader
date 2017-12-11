@@ -1,9 +1,12 @@
 {"Items":
 [{
-  "name":"Pikabu",
-  "link":"https://pikabu.ru/xmlfeeds.php?cmd=popular"
+  "name":"Habr BEST",
+  "link":"https://habrahabr.ru/rss/flows/develop/best/"
 },{
   "name":"Habr gamedev",
   "link":"https://habrahabr.ru/rss/hub/gamedev/"
+},{
+  "name":"Habr monthly",
+  "link":"https://habrahabr.ru/rss/flows/develop/best/monthly/"
 }]
 }
