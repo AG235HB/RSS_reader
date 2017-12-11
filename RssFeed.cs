@@ -46,7 +46,7 @@ namespace RSS_reader
             }
             catch(System.IO.FileNotFoundException)
             {
-                throw new Exception("File " + Url + " not found.");
+                throw new Exception(Url + " not found.");
             }
             catch(Exception ex)
             { throw ex; }

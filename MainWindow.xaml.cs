@@ -57,9 +57,9 @@ namespace RSS_reader
         {
             foreach (FeedItem fi in fSettings.Items)
             {
-                //MessageBox.Show("Name: " + fi._name + " Link: " + fi._link);
                 chBox_RSS.Items.Add(fi._name);
             }
+            chBox_RSS.SelectedIndex = 0;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -93,12 +93,11 @@ namespace RSS_reader
         private void bFeedSettings_Click(object sender, RoutedEventArgs e)
         {
             FeedWindow fWindow = new FeedWindow(ref fSettings);
-            fWindow.ShowDialog();
-            //if (fWindow.ShowDialog() == true)
-            
+            Nullable<bool> dialog =  fWindow.ShowDialog();
+            Refresh();
         }
 
-        private void btn_Refresh_Click(object sender, RoutedEventArgs e)
+        private void Refresh()
         {
             chBox_RSS.Items.Clear();
             FillComboBox();

@@ -31,7 +31,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <Button x:Name="bFeedSettings" Content="Settings" HorizontalAlignment="Left" Margin="442,0,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="bFeedSettings_Click"/>
-        <Button x:Name="btn_Refresh" Content="Refresh" HorizontalAlignment="Left" Margin="367,0,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btn_Refresh_Click"/>
+        <!--<Button x:Name="btn_Refresh" Content="Refresh" HorizontalAlignment="Left" Margin="367,0,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btn_Refresh_Click"/>-->
         <!--<ListView x:Name="listView" Margin="260,35,0,0">
             <ListView.View>
                 <GridView>

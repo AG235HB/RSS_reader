@@ -65,6 +65,8 @@ namespace RSS_reader
         {
             label0.IsEnabled = false;
             label1.IsEnabled = false;
+            tb_FeedLink.Text = String.Empty;
+            tb_FeedName.Text = String.Empty;
             tb_FeedLink.IsEnabled = false;
             tb_FeedName.IsEnabled = false;
             btn_AddFeed.IsEnabled = false;
